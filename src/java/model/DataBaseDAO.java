@@ -8,9 +8,9 @@ public class DataBaseDAO {
     
     public void conectar() throws Exception {
         Class.forName("com.mysql.jdbc.Driver");
-        String user = "root";
-        String pass = "";
-        String url = "jdbc:mysql://localhost:3306/salaodebelezagarden";
+        String user = "teste";
+        String pass = "123";
+        String url = "jdbc:mysql://localhost:3306/salaodebelezagarden?useSSL=false";
         conn = DriverManager.getConnection(url, user, pass);
     }
     
